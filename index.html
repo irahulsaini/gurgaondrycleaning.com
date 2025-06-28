@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+        <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+        <link href="./dist/css/aos.css" rel="stylesheet">
+
+		<title>Gurgaon Dry Cleaning</title>
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                letter-spacing: .5px;
+                font-size:1rem;
+                color:#000;
+            }
+            .main-banner{
+                background-image:url('./dist/images/main-bg.jpg');
+                background-position: top center;
+                background-size: cover;
+            }
+            .banner-wrapper{
+                background-color: rgba(0,0,0,0.4);
+            }
+            .contactForm{
+                background-color:rgba(255,255,255,0.9)
+            }
+            .banner-text{
+                background-color:rgba(0,0,0,0.8)
+
+            }
+            .contactForm .heading{
+                letter-spacing: 2px;
+            }
+            .btn{
+                transition: .3s;
+            }
+            .btn:hover{
+                transform:translateY(-3px) scale(1.05);
+            }
+            .testimonials{
+                background-image:url('./dist/images/bg-2.jpg');
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .testimonials-wrapper{
+                background-color: rgba(255,255,255,.8);
+            }
+            .contact-form-section{
+                background-image:url('./dist/images/bg-3.jpg');
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .contact-form-section-wrapper{
+                background-color: rgba(0,0,0,.6);
+            }
+        </style>
+	</head>
+	<body>
+            <nav class="navbar navbar-expand-xl bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand fw-bold text-primary me-md-5" href="./">GurgaonDryCleaning</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-3 fw-medium gap-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#main">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#whyus">Why Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#process">Our Process</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testimonials">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex gap-3">
+                            <a class="btn btn-outline-success py-3 px-4" type="submit"><i class="bi bi-person-rolodex"></i> Book Now</a>
+                            <a class="btn btn-success py-3 px-4 " type="submit"><i class="bi bi-telephone "></i> Call now</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>        
+		<section class="main-banner bg-primary h-100" id=""main>
+            <div class="banner-wrapper py-5 ">
+                <div class="container">
+                    <div class="row  align-items-center">
+                        <div class="col-md-6">
+                            <div class="banner-text py-5 px-md-5 px-2 w-auto rounded text-light"  data-aos="fade-down">
+                                <div class="text-uppercase text-uppercase fw-bold small d-inline px-1 border-bottom pb-1 border-warning text-warning">Dry Cleaning Services</div>
+                                <div class="h2 fw-medium mt-3 mb-4">Doorstep Dry Cleaning & Laundry Services in Gurgaon</div>
+                                <p class="mb-4">Specialized Sofa, Carpet & Car Dry Cleaning — with professional care & FREE doorstep service across Gurgaon.</p>
+                                <div class="d-md-flex gap-4">
+                                    <a href="tel:" class="btn btn-success btn-sm px-3 py-3 overflow-hidden fw-bold d-block w-100 mb-3" >
+                                        <i class="bi bi-calendar3"></i> Book Free Pickup</span>
+                                    </a>
+                                    <a href="tel:" class="btn btn-success btn-sm px-3 py-3 overflow-hidden fw-bold  d-block w-100 mb-3" >
+                                        <i class="bi bi-telephone py-3 border-right border-light"></i><span class="px-"> 9999 123 456</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4">
+                            <form class="contactForm py-4 px-4 shadow  border-success border-top border-5 border-bottom rounded"  data-aos="fade-up" data-aos-delay="300">
+                                <div class="text-center text-uppercase text-success h5">Book Doorstep Service</div>
+                                <div class="form-group mb-3">
+                                    <label class="text-muted small ">Your name<span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control bg-light py-2 px-3 border-primary" name="name" placeholder="Naval"/>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="text-muted small ">Your phone<span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control bg-light py-2 px-3  border-primary" name="phone" placeholder="9999 123 456"/>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="text-muted small ">Service<span class="text-danger">*</span></label>
+                                    <select class="form-control bg-light  border-primary" name="service">
+                                        <option value="">-- Please Select --</option>
+                                        <option value="Sofa Cleaning">Sofa Cleaning</option>
+                                        <option value="Laundry Service">Laundry Service</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="text-muted small ">Your requirements<span class="text-danger">*</span></label>
+                                    <textarea type="text" class="form-control bg-light py-2 px-3  border-primary" rows="4" placeholder="Please write a brief about your requirements"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-success d-block w-100 shadow py-3 "><i class="bi bi-calendar3"></i> Book Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services bg-white py-5" id="services">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="subheading small text-uppercase mb-3 border-bottom d-inline border-bottom border-success border-2 px-1 pb-1  fw-bold" data-aos="fade-up" data-aos-delay="100">Our Services</div>
+                    <div class="heading h2 mt-2  mb-5 fw-medium" data-aos="fade-up" data-aos-delay="300">Our <span class="text-warning">Doorstep</span> Services</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 col-md-4 pb-3">
+                        <div class="service-item shadow  border-bottom border-2 border-success pb-3 h-100" data-aos="zoom-in-up" data-aos-delay="400">
+                            <div class="service-image mb-2">
+                                <img src="./dist/images/service-sofacleaning.jpg" class="w-100"/>
+                            </div>
+                            <div class="service-content px-3 py-2">
+                                <h5 class="text-success">Sofa Cleaning</h5>
+                                <p class="small text-muted">Our technicians visit your location and perform deep-cleaning using fabric-safe, anti-bacterial solutions. Perfect for fabric, leather, or suede. </p>
+                                <button type="button" class="btn btn-success btn-sm px-4 fw-bold text-uppercase py-3"><i class="bi bi-calendar3"></i> Book Now <i class="bi bi-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-md-4 pb-3">
+                        <div class="service-item shadow border-bottom border-2 border-success pb-3 h-100"  data-aos="zoom-in-up" data-aos-delay="500">
+                            <div class="service-image mb-2">
+                                <img src="./dist/images/service-carpet-drycleaning.jpg" class="w-100"/>
+                            </div>
+                            <div class="service-content px-3 py-2">
+                                <h5 class="text-success">Carpet Dry Cleaning</h5>
+                                <p class="small text-muted">Whether it’s a small rug or a large wall-to-wall carpet, our team ensures complete hygiene and freshness — without soaking or long drying times.</p>
+                                <button type="button" class="btn btn-success btn-sm px-4 fw-bold text-uppercase py-3"><i class="bi bi-calendar3"></i> Book Now <i class="bi bi-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-md-4 pb-3">
+                        <div class="service-item shadow border-bottom border-2 border-success pb-3 h-100"  data-aos="zoom-in-up" data-aos-delay="600">
+                            <div class="service-image mb-2">
+                                <img src="./dist/images/service-car-drycleaning.jpg" class="w-100"/>
+                            </div>
+                            <div class="service-content px-3 py-2">
+                                <h5 class="text-success">Car Dry Cleaning</h5>
+                                <p class="small text-muted">We clean seats, floors, mats, roof, and door panels using high-suction machines and fabric-safe agents. Perfect for fabric, leather, and mixed interiors.</p>
+                                <button type="button" class="btn btn-success btn-sm px-4 fw-bold text-uppercase py-3"><i class="bi bi-calendar3"></i> Book Now <i class="bi bi-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="aboutus bg-primary overflow-hidden" id="about">
+            <div class="container-fluid px-0">
+                <div class="row g-0 ">
+                    <div class="col-md-5 order-lg-2 " data-aos="zoom-in-up" data-aos-delay="100">
+                        <img src="./dist/images/about.jpg" class="w-100 h-100"/>
+                    </div>
+                    <div class="col-md-7 py-5 text-white bg-primary text-whtie order-lg-1 px-2 px-md-5">
+                        <div class=" section-header text-center text-md-start " >
+                            <div class="subheading small text-uppercase mb-3 border-bottom d-inline border-bottom border-success border-2 px-1 pb-1 text-success fw-bold" data-aos="slide-up" data-aos-delay="200">who are we?</div>
+                            <div class="heading h2 mt-2 text-white fw-medium"><span class="text-warning" data-aos="slide-up" data-aos-delay="300">About</span> us</div>
+                            
+                        </div>
+                        <p data-aos="slide-up" data-aos-delay="400">Welcome to Gurgaon Dry Cleaning, Gurgaon’s trusted doorstep cleaning partner for sofas, carpets, and car interiors. Our expert team delivers deep, hygienic, and fabric-safe dry cleaning right at your location — no need to step out!</p>
+                        <p data-aos="slide-up" data-aos-delay="500">We use advanced machines and eco-friendly solutions to ensure your furniture, flooring, and car upholstery stay spotless and fresh. With easy scheduling, on-time service, and affordable pricing, we make cleanliness more convenient than ever.</p>
+                        <a href="tel:" class="btn btn-outline-warning btn-sm px-3 py-3 overflow-hidden fw-bold " data-aos="slide-up" data-aos-delay="600">
+                            <i class="bi bi-telephone py-3 border-right border-light"></i><span class="px-"> Call Now: 9999 123 456</span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="whychoose py-5" id="whyus">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="subheading small text-uppercase mb-3 border-bottom d-inline border-bottom border-success border-2 px-1 pb-1  fw-bold" data-aos="slide-up" data-aos-delay="100">Why Us</div>
+                    <div class="heading h2 mt-2  mb-5 fw-medium" data-aos="slide-up" data-aos-delay="200">Why <span class="text-warning">Choose</span> Us</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 pb-3">
+                        <div class="whychoose-item d-flex" data-aos="slide-up" data-aos-delay="300">
+                            <div class="icon pe-3">
+                                <i class="bi bi-truck display-6 text-success"></i>
+                            </div>
+                            <div class="content">
+                                <div class="h5">Doorstep Pickup & Delivery</div>
+                                <p class="small text-muted">No need to visit a shop — we come to your location and deliver everything back fresh & clean.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-3">
+                        <div class="whychoose-item d-flex" data-aos="slide-up" data-aos-delay="400">
+                            <div class="icon pe-3">
+                                <i class="bi bi-person-check display-6 text-success"></i>
+                            </div>
+                            <div class="content">
+                                <div class="h5">Trained & Verified Professionals</div>
+                                <p class="small text-muted">Our cleaning experts are background-verified, skilled, and trained to handle all types of fabrics and surfaces with care.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-3">
+                        <div class="whychoose-item d-flex" data-aos="slide-up" data-aos-delay="500">
+                            <div class="icon pe-3">
+                                <i class="bi bi-patch-check display-6 text-success"></i>
+                            </div>
+                            <div class="content">
+                                <div class="h5">Eco-Friendly & Safe Products</div>
+                                <p class="small text-muted">We use non-toxic, fabric-safe cleaning solutions — safe for kids, pets, and sensitive skin.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-3">
+                        <div class="whychoose-item d-flex" data-aos="slide-up" data-aos-delay="600">
+                            <div class="icon pe-3">
+                                <i class="bi bi-currency-rupee display-6 text-success"></i>
+                            </div>
+                            <div class="content">
+                                <div class="h5">Affordable & Transparent Pricing</div>
+                                <p class="small text-muted">No hidden charges. Upfront pricing with flexible packages and great value.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 pb-3">
+                        <div class="whychoose-item d-flex" data-aos="slide-up" data-aos-delay="700">
+                            <div class="icon pe-3">
+                                <i class="bi bi-alarm display-6 text-success"></i>
+                            </div>
+                            <div class="content">
+                                <div class="h5">Quick Turnaround Time</div>
+                                <p class="small text-muted">Fast and efficient service — we respect your time and ensure on-time delivery.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-3">
+                        <div class="whychoose-item d-flex" data-aos="slide-up" data-aos-delay="800">
+                            <div class="icon pe-3">
+                                <i class="bi bi-hand-thumbs-up display-6 text-success"></i>
+                            </div>
+                            <div class="content">
+                                <div class="h5">100% Satisfaction Guaranteed</div>
+                                <p class="small text-muted">Not happy with the result? We’ll re-clean it — no questions asked.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="how-works bg-primary py-5 " id="process">
+            <div class="container">
+                <div class="section-header text-center text-white">
+                    <div class="subheading small text-uppercase mb-3 border-bottom d-inline border-bottom border-warning border-2 px-1 pb-1  fw-bold" data-aos="fade-up" data-aos-delay="200">our process</div>
+                    <div class="heading h2 mt-2  mb-5 fw-medium" data-aos="fade-up" data-aos-delay="400">How <span class="text-warning">It Works</span></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 pb-3">
+                        <div class="how-works-item bg-white rounded-4 py-4 px-4 text-center h-100" data-aos="fade-up" data-aos-delay="600">
+                            <div class="icon mb-3">
+                                <i class="bi bi-calendar2-check display-5 text-success"></i>
+                            </div>
+                            <div class="content">
+                                <h5 class="text-success">STEP 1: Schedule a Pickup</h5>
+                                <p class="text-muted small">Call us, WhatsApp us, or fill out the contact form to book your service. Choose a convenient date and time — we’ll come to your doorstep, no extra charge!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-3">
+                        <div class="how-works-item bg-white rounded-4 py-4 px-4 text-center h-100" data-aos="fade-up" data-aos-delay="1000">
+                            <div class="icon mb-3">
+                                <i class="bi bi-person-check display-5 text-success"></i>
+                            </div>
+                            <div class="content">
+                                <h5 class="text-success">STEP 2: We Clean With Care</h5>
+                                <p class="text-muted small">Our professional team arrives at your location with all the necessary tools and eco-friendly products. Whether it’s your sofa, carpet, or car — we clean it thoroughly and hygienically.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-3">
+                        <div class="how-works-item bg-white rounded-4 py-4 px-4 text-center h-100" data-aos="fade-up" data-aos-delay="1400">
+                            <div class="icon mb-3">
+                                <i class="bi bi-house-door display-5 text-success"></i>
+                            </div>
+                            <div class="content">
+                                <h5 class="text-success">STEP 2: Enjoy a Fresh, Clean Space</h5>
+                                <p class="text-muted small">Sit back and relax! Your sofa, carpet, or car interior will be left looking spotless, smelling fresh, and ready to use — with zero mess or hassle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials" id="testimonials">
+            <div class="testimonials-wrapper py-5">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <div class="subheading small text-uppercase mb-3 border-bottom d-inline border-bottom border-success border-2 px-1 pb-1  fw-bold" data-aos="slide-up" data-aos-delay="100">testimonials</div>
+                        <div class="heading h2 mt-2  mb-5 fw-medium" data-aos="slide-up" data-aos-delay="200">What our <span class="text-warning">Customer</span> Say</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 pb-3">
+                            <div class="testimonial-item bg-white rounded shadow py-3 px-4 h-100 d-flex flex-wrap align-content-between" data-aos="fade-up" data-aos-delay="100">
+                                <div class="d-flex justify-content-between">
+                                    <div class="rarings mb-2">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="quote small text-muted mb-3">
+                                    <em>Super impressed with their sofa and carpet cleaning! The team arrived on time, handled everything professionally, and left my living room looking brand new. Loved the convenience of not having to move anything. Highly recommended!</em>
+                                </div>
+                                    <div class="author-name text-end small w-100">
+                                        <div class="name">&mdash; Priya Malhotra</div>
+                                        <div class="location small text-muted">Sector 56, Gurgaon</div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pb-3">
+                            <div class="testimonial-item bg-white rounded shadow py-3 px-4 h-100 d-flex flex-wrap align-content-between" data-aos="fade-up" data-aos-delay="300">
+                                <div class="d-flex justify-content-between">
+                                    <div class="rarings mb-2">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="quote small text-muted mb-3">
+                                    <em>I booked their car dry cleaning service and it felt like a showroom-level interior detail. No chemical smell, no mess — just clean, fresh seats and flooring. Plus, they did it right in my parking lot. Very convenient!</em>
+                                </div>
+                                    <div class="author-name text-end small w-100">
+                                        <div class="name">&mdash; Rajeev Khurana</div>
+                                        <div class="location small text-muted">DLF Phase 2, Gurgaon</div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pb-3">
+                            <div class="testimonial-item bg-white rounded shadow py-3 px-4 h-100 d-flex flex-wrap align-content-between" data-aos="fade-up" data-aos-delay="600">
+                                <div class="d-flex justify-content-between">
+                                    <div class="rarings mb-2">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="quote small text-muted mb-3">
+                                    <em>Finding a reliable doorstep cleaning service was tough until I came across [Your Brand Name]. Their team is polite, quick, and the results are amazing. I’ve already recommended them to my neighbors!</em>
+                                </div>
+                                    <div class="author-name text-end small w-100">
+                                        <div class="name">&mdash; Neha Arora</div>
+                                        <div class="location small text-muted">South City 1, Gurgaon</div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-form-section" id="contact">
+            <div class="contact-form-section-wrapper py-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 py-5 text-white">
+                            <div class=" section-header text-center text-md-start " >
+                                <div class="subheading small text-uppercase mb-3 border-bottom d-inline border-bottom border-success border-2 px-1 pb-1 text-success fw-bold" data-aos="fade-up" data-aos-delay="200">Contact Info</div>
+                                <div class="heading h2 mt-2 text-white fw-medium"  data-aos="slide-up" data-aos-delay="300">Get in <span class="text-warning" >Touch With</span> us</div>
+                            </div>
+                            <p  data-aos="fade-up" data-aos-delay="400">Have a question, need a custom quote, or want to schedule a pickup? We’re just a message or call away! Our team is here to assist you with any dry cleaning, carpet, sofa, or car cleaning service — right at your doorstep.</p>
+                            <div class="contact-item d-flex gap-3 text-white h4 mb-4" data-aos="fade-up" data-aos-delay="600">
+                                <div class="icon text-white">
+                                    <i class="bi bi-telephone text-warning"></i>
+                                </div>
+                                <div class="info">
+                                    <a href="tel:" class="text-white ">(+91) 9999 123 456</a>
+                                </div>
+                            </div>
+                            <div class="contact-item d-flex gap-3 text-white h4 mb-4" data-aos="fade-up" data-aos-delay="800">
+                                <div class="icon text-white">
+                                    <i class="bi bi-envelope text-warning"></i>
+                                </div>
+                                <div class="info">
+                                    <a href="mailto:info@example.com" class="text-white ">info@example.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-5">
+
+                                <form class="contactForm py-4 px-4 shadow bg-primary border-warning border rounded"  data-aos="fade-up" data-aos-delay="300">
+                                    <div class="text-center text-uppercase text-warning h5">Book Doorstep Service</div>
+                                    <div class="form-group mb-3">
+                                        <label class="text-warning small ">Your name<span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control bg-light py-2 px-3 border-primary" name="name" placeholder="Naval"/>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label class="text-warning small ">Your phone<span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control bg-light py-2 px-3  border-primary" name="phone" placeholder="9999 123 456"/>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label class="text-warning small ">Service<span class="text-danger">*</span></label>
+                                        <select class="form-control bg-light  border-primary" name="service">
+                                            <option value="">-- Please Select --</option>
+                                            <option value="Sofa Cleaning">Sofa Cleaning</option>
+                                            <option value="Laundry Service">Laundry Service</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label class="text-warning small ">Your requirements<span class="text-danger">*</span></label>
+                                        <textarea type="text" class="form-control bg-light py-2 px-3  border-primary" rows="4" placeholder="Please write a brief about your requirements"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning d-block w-100 shadow py-3 "><i class="bi bi-calendar3"></i> Book Now</button>
+                                </form>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-dark py-4">
+            <div class="container text-center">
+                <p class="small text-white mb-0">Copyright &copy; 2025 <a href="./" class="text-white">GurgaonDryCleaning</a> | All Rights Reserved.</p>
+            </div>
+        </footer>
+        <script src="./dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./dist/js/aos.js"></script>
+        <script>
+        AOS.init({
+            duration: 1000
+        });
+        </script>
+	</body>
+</html>
