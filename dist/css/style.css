@@ -1,4 +1,3 @@
-
 html{
     scroll-behavior: smooth;
 }
@@ -18,8 +17,10 @@ body{
     transition:.5s;
     letter-spacing: 1px;
 }
-.navbar-nav .nav-item .nav-link:hover{
-    border-color:var(--bs-warning)
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active{
+    border-color:var(--bs-warning);
+    color:var(--bs-warning);
 }
 .flashing-text {
     animation: flash 1s infinite;
@@ -114,4 +115,10 @@ body{
     right:0;
     bottom:-1px;
     z-index:99;
+}
+@media screen and (max-width:769px){
+    .navbar-nav{
+        overflow-x: auto;
+        max-width:100%;
+    }
 }
