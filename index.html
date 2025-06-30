@@ -61,7 +61,7 @@
                     </div>
                 </div>
             </nav>        
-		<section class="section main-banner bg-primary h-100" id="main">
+		<section class="section main-banner bg-primary h-100 position-relative " id="main">
             <div class="banner-wrapper py-5 ">
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
@@ -86,26 +86,28 @@
                                 <div class="text-center text-uppercase text-success h5">Book Doorstep Service</div>
                                 <div class="form-group mb-3">
                                     <label class="text-muted small ">Your name<span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control bg-light py-2 px-3 border-primary" name="name" placeholder="Naval"/>
+                                    <input type="text" class="form-control bg-light py-2 px-3 border-primary" name="name" placeholder="Your name" required="required"/>
                                 </div>
                                 <div class="form-group mb-3">
                                     <label class="text-muted small ">Your phone<span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control bg-light py-2 px-3  border-primary" name="phone" placeholder="9728 844 119"/>
+                                    <input type="text" class="form-control bg-light py-2 px-3  border-primary" name="phone" placeholder="9728 844 119" required="required"/>
                                 </div>
                                 <div class="form-group mb-3">
                                     <label class="text-muted small ">Service<span class="text-danger">*</span></label>
-                                    <select class="form-control bg-light  border-primary" name="service">
+                                    <select class="form-control bg-light  border-primary" name="service" required="required">
                                         <option value="">-- Please Select --</option>
                                         <option value="Sofa Cleaning">Sofa Cleaning</option>
-                                        <option value="Laundry Service">Laundry Service</option>
+                                        <option value="Carpet Dry Cleaning">Carpet Dry Cleaning</option>
+                                        <option value="Car Dry Cleaning">Car Dry Cleaning</option>    
                                         <option value="Other">Other</option>
                                     </select>
                                 </div>
                                 <div class="form-group mb-3">
                                     <label class="text-muted small ">Your requirements<span class="text-danger">*</span></label>
-                                    <textarea type="text" class="form-control bg-light py-2 px-3  border-primary" rows="4" placeholder="Please write a brief about your requirements"></textarea>
+                                    <textarea type="text" name="message" class="form-control bg-light py-2 px-3  border-primary" rows="4" placeholder="Please write a brief about your requirements" required="required"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-success d-block w-100 shadow py-3 "><i class="bi bi-calendar3"></i> Book Now</button>
+                                <div class="response"></div>
                             </form>
                         </div>
                     </div>
@@ -113,7 +115,7 @@
             </div>
         </section>
         <section class="section aboutus bg-primary overflow-hidden" id="about">
-            <div class="container-fluid px-0 py-md-5">
+            <div class="container-fluid px-0 py-5">
                 <div class="row g-0 ">
                     <div class="col-md-5 order-lg-2 " data-aos="zoom-in-up" data-aos-delay="100">
                         <img src="./dist/images/about.jpg" class="w-100 h-100"/>
@@ -121,7 +123,7 @@
                     <div class="col-md-7 py-5 text-white bg-primary text-whtie order-lg-1 px-2 px-md-5">
                         <div class=" section-header text-center text-md-start " >
                             <div class="subheading small text-uppercase mb-3 border-bottom d-inline border-bottom border-success border-2 px-1 pb-1 text-success fw-bold" data-aos="fade-up" data-aos-delay="200">who are we?</div>
-                            <div class="heading h2 mt-2 text-white fw-medium"><span class="text-warning" data-aos="fade-up" data-aos-delay="300">About</span> us</div>
+                            <div class="heading h2 mt-2 text-white fw-medium"  data-aos="fade-up" data-aos-delay="300"><span class="text-warning">About</span> us</div>
                             
                         </div>
                         <p data-aos="fade-up" data-aos-delay="400">Welcome to Gurgaon Dry Cleaning, Gurgaon’s trusted doorstep cleaning partner for sofas, carpets, and car interiors. Our expert team delivers deep, hygienic, and fabric-safe dry cleaning right at your location — no need to step out!</p>
@@ -134,8 +136,8 @@
                 </div>
             </div>
         </section>
-        <section class="section services bg-white py-5" id="services">
-            <div class="container py-md-5">
+        <section class="section services bg-light py-5" id="services">
+            <div class="container py-5">
                 <div class="section-header text-center">
                     <div class="subheading small text-uppercase mb-3 border-bottom d-inline border-bottom border-success border-2 px-1 pb-1  fw-bold" data-aos="fade-up" data-aos-delay="100">Our Services</div>
                     <div class="heading h2 mt-2  mb-5 fw-medium" data-aos="fade-up" data-aos-delay="300">Our <span class="text-warning">Doorstep</span> Services</div>
@@ -181,7 +183,7 @@
             </div>
         </section>
         <section class="section whychoose py-5" id="whyus">
-            <div class="container py-md-5">
+            <div class="container py-5">
                 <div class="section-header text-center">
                     <div class="subheading small text-uppercase mb-3 border-bottom d-inline border-bottom border-success border-2 px-1 pb-1  fw-bold" data-aos="fade-up" data-aos-delay="100">Why Us</div>
                     <div class="heading h2 mt-2  mb-5 fw-medium" data-aos="fade-up" data-aos-delay="200">Why <span class="text-warning">Choose</span> Us</div>
@@ -259,7 +261,7 @@
             </div>
         </section>
         <section class="section how-works bg-primary py-5 " id="process">
-            <div class="container py-md-5">
+            <div class="container py-5">
                 <div class="section-header text-center text-white">
                     <div class="subheading small text-uppercase mb-3 border-bottom d-inline border-bottom border-warning border-2 px-1 pb-1  fw-bold" data-aos="fade-up" data-aos-delay="200">our process</div>
                     <div class="heading h2 mt-2  mb-5 fw-medium" data-aos="fade-up" data-aos-delay="400">How <span class="text-warning">It Works</span></div>
@@ -277,7 +279,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 pb-3">
-                        <div class="how-works-item bg-white rounded-4 py-4 px-4 text-center h-100" data-aos="fade-up" data-aos-delay="900">
+                        <div class="how-works-item bg-white rounded-4 py-4 px-4 text-center h-100" data-aos="fade-up" data-aos-delay="700">
                             <div class="icon mb-3">
                                 <i class="bi bi-person-check display-5 text-success"></i>
                             </div>
@@ -288,7 +290,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 pb-3">
-                        <div class="how-works-item bg-white rounded-4 py-4 px-4 text-center h-100" data-aos="fade-up" data-aos-delay="1100">
+                        <div class="how-works-item bg-white rounded-4 py-4 px-4 text-center h-100" data-aos="fade-up" data-aos-delay="800">
                             <div class="icon mb-3">
                                 <i class="bi bi-house-door display-5 text-success"></i>
                             </div>
@@ -303,7 +305,7 @@
         </section>
         <section class="section testimonials" id="testimonials">
             <div class="testimonials-wrapper py-5">
-                <div class="container py-md-5">
+                <div class="container py-5">
                     <div class="section-header text-center">
                         <div class="subheading small text-uppercase mb-3 border-bottom d-inline border-bottom border-success border-2 px-1 pb-1  fw-bold" data-aos="fade-up" data-aos-delay="100">testimonials</div>
                         <div class="heading h2 mt-2  mb-5 fw-medium" data-aos="fade-up" data-aos-delay="200">What our <span class="text-warning">Customer</span> Say</div>
@@ -374,7 +376,7 @@
             </div>
         </section>
         <section class="section gallery py-5 bg-light" id="gallery">
-            <div class="container-fluid py-md-5">
+            <div class="container-fluid py-5">
                 <div class="section-header text-center">
                     <div class="subheading small text-uppercase mb-3 border-bottom d-inline border-bottom border-success border-2 px-1 pb-1  fw-bold" data-aos="fade-up" data-aos-delay="100">our work</div>
                     <div class="heading h2 mt-2  mb-5 fw-medium" data-aos="fade-up" data-aos-delay="200">Our <span class="text-warning">Gallery</span></div>
@@ -386,22 +388,22 @@
                         </a>
                     </div>
                     <div class="col-6 col-md-3">
-                        <a href="./dist/images/gallery-2.jpg" class="gallery-item" data-lightbox="gallery" data-aos="fade-up" data-aos-delay="500">
+                        <a href="./dist/images/gallery-2.jpg" class="gallery-item" data-lightbox="gallery" data-aos="fade-up" data-aos-delay="300">
                             <img src="./dist/images/gallery-2.jpg" class="w-100"/>
                         </a>
                     </div>
                     <div class="col-6 col-md-3">
-                        <a href="./dist/images/gallery-3.jpg" class="gallery-item" data-lightbox="gallery" data-aos="fade-up" data-aos-delay="700">
+                        <a href="./dist/images/gallery-3.jpg" class="gallery-item" data-lightbox="gallery" data-aos="fade-up" data-aos-delay="400">
                             <img src="./dist/images/gallery-3.jpg" class="w-100"/>
                         </a>
                     </div>
                     <div class="col-6 col-md-3">
-                        <a href="./dist/images/gallery-4.jpg" class="gallery-item" data-lightbox="gallery" data-aos="fade-up" data-aos-delay="1000">
+                        <a href="./dist/images/gallery-4.jpg" class="gallery-item" data-lightbox="gallery" data-aos="fade-up" data-aos-delay="400">
                             <img src="./dist/images/gallery-4.jpg" class="w-100"/>
                         </a>
                     </div>
                     <div class="col-6 col-md-3">
-                        <a href="./dist/images/gallery-5.jpg" class="gallery-item" data-lightbox="gallery" data-aos="fade-up" data-aos-delay="300">
+                        <a href="./dist/images/gallery-5.jpg" class="gallery-item" data-lightbox="gallery" data-aos="fade-up" data-aos-delay="500">
                             <img src="./dist/images/gallery-5.jpg" class="w-100"/>
                         </a>
                     </div>
@@ -411,12 +413,12 @@
                         </a>
                     </div>
                     <div class="col-6 col-md-3">
-                        <a href="./dist/images/gallery-7.jpg" class="gallery-item" data-lightbox="gallery" data-aos="fade-up" data-aos-delay="800">
+                        <a href="./dist/images/gallery-7.jpg" class="gallery-item" data-lightbox="gallery" data-aos="fade-up" data-aos-delay="600">
                             <img src="./dist/images/gallery-7.jpg" class="w-100"/>
                         </a>
                     </div>
                     <div class="col-6 col-md-3">
-                        <a href="./dist/images/gallery-8.jpg" class="gallery-item" data-lightbox="gallery" data-aos="fade-up" data-aos-delay="1100">
+                        <a href="./dist/images/gallery-8.jpg" class="gallery-item" data-lightbox="gallery" data-aos="fade-up" data-aos-delay="600">
                             <img src="./dist/images/gallery-8.jpg" class="w-100"/>
                         </a>
                     </div>
@@ -425,7 +427,7 @@
         </section>
         <section class="section contact-form-section" id="contact">
             <div class="contact-form-section-wrapper py-5">
-                <div class="container py-md-5">
+                <div class="container py-5">
                     <div class="row align-items-center">
                         <div class="col-md-5 py-5 text-white">
                             <div class=" section-header text-center text-md-start " >
@@ -452,32 +454,33 @@
                         </div>
                         <div class="col-md-2"></div>
                         <div class="col-md-5">
-
-                                <form class="contactForm py-4 px-4 shadow bg-primary border-warning border rounded"  data-aos="fade-up" data-aos-delay="300">
-                                    <div class="text-center text-uppercase text-warning h5">Book Doorstep Service</div>
-                                    <div class="form-group mb-3">
-                                        <label class="text-warning small ">Your name<span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control bg-light py-2 px-3 border-primary" name="name" placeholder="Naval"/>
-                                    </div>
-                                    <div class="form-group mb-3">
-                                        <label class="text-warning small ">Your phone<span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control bg-light py-2 px-3  border-primary" name="phone" placeholder="9728 844 119"/>
-                                    </div>
-                                    <div class="form-group mb-3">
-                                        <label class="text-warning small ">Service<span class="text-danger">*</span></label>
-                                        <select class="form-control bg-light  border-primary" name="service">
-                                            <option value="">-- Please Select --</option>
-                                            <option value="Sofa Cleaning">Sofa Cleaning</option>
-                                            <option value="Laundry Service">Laundry Service</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group mb-3">
-                                        <label class="text-warning small ">Your requirements<span class="text-danger">*</span></label>
-                                        <textarea type="text" class="form-control bg-light py-2 px-3  border-primary" rows="4" placeholder="Please write a brief about your requirements"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-warning d-block w-100 shadow py-3 "><i class="bi bi-calendar3"></i> Book Now</button>
-                                </form>                        
+                            <form class="contactForm py-4 px-4 shadow bg-primary border-warning border rounded"  data-aos="fade-up" data-aos-delay="300">
+                                <div class="text-center text-uppercase text-warning h5">Book Doorstep Service</div>
+                                <div class="form-group mb-3">
+                                    <label class="text-warning small ">Your name<span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control bg-light py-2 px-3 border-primary input-text" name="name" placeholder="Your name" required="required"/>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="text-warning small ">Your phone<span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control bg-light py-2 px-3  border-primary input-number" name="phone" placeholder="1234567890" required="required"/>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="text-warning small ">Service<span class="text-danger">*</span></label>
+                                    <select class="form-control bg-light  border-primary" name="service" required="required">
+                                        <option value="">-- Please Select --</option>
+                                        <option value="Sofa Cleaning">Sofa Cleaning</option>
+                                        <option value="Carpet Dry Cleaning">Carpet Dry Cleaning</option>
+                                        <option value="Car Dry Cleaning">Car Dry Cleaning</option>    
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="text-warning small ">Your requirements<span class="text-danger">*</span></label>
+                                    <textarea type="text" name="message" class="form-control bg-light py-2 px-3 border-primary" rows="4" placeholder="Please write a brief about your requirements" required="required"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-warning d-block w-100 shadow py-3 "><i class="bi bi-calendar3"></i> Book Now</button>
+                                <div class="response"></div>
+                            </form>                        
                         </div>
                     </div>
                 </div>
@@ -494,33 +497,36 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body p-0">
-                            <form class="contactForm py-4 px-4 shadow  border-success border-top border-5 border-bottom rounded"  data-aos="fade-up" data-aos-delay="300">
-                                <button type="button" class="btn-close position-absolute" style="right:20px;top:5px" data-bs-dismiss="modal" aria-label="Close"></button>
-                                <div class="text-center text-uppercase text-success h5">Book Doorstep Service</div>
-                                
-                                <div class="form-group mb-3">
-                                    <label class="text-muted small ">Your name<span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control bg-light py-2 px-3 border-primary" name="name" placeholder="Naval"/>
-                                </div>
-                                <div class="form-group mb-3">
-                                    <label class="text-muted small ">Your phone<span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control bg-light py-2 px-3  border-primary" name="phone" placeholder="9728 844 119"/>
-                                </div>
-                                <div class="form-group mb-3">
-                                    <label class="text-muted small ">Service<span class="text-danger">*</span></label>
-                                    <select class="form-control bg-light  border-primary" name="service">
-                                        <option value="">-- Please Select --</option>
-                                        <option value="Sofa Cleaning">Sofa Cleaning</option>
-                                        <option value="Laundry Service">Laundry Service</option>
-                                        <option value="Other">Other</option>
-                                    </select>
-                                </div>
-                                <div class="form-group mb-3">
-                                    <label class="text-muted small ">Your requirements<span class="text-danger">*</span></label>
-                                    <textarea type="text" class="form-control bg-light py-2 px-3  border-primary" rows="4" placeholder="Please write a brief about your requirements"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-success d-block w-100 shadow py-3 "><i class="bi bi-calendar3"></i> Book Now</button>
-                            </form>
+                        <form class="contactForm py-4 px-4 shadow  border-success border-top border-5 border-bottom rounded"  data-aos="fade-up" data-aos-delay="300">
+                            <div class="text-center text-uppercase text-success h5">Book Doorstep Service</div>
+                            <button type="button" class="btn-close position-absolute" style="right:5px;top:8px" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="form-group mb-3">
+                                <label class="text-muted small ">Your name<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control bg-light py-2 px-3 border-primary" name="name" placeholder="Your name" required="required"/>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="text-muted small ">Your phone<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control bg-light py-2 px-3  border-primary" name="phone" placeholder="9728 844 119" required="required"/>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="text-muted small ">Service<span class="text-danger">*</span></label>
+                                <select class="form-control bg-light  border-primary" name="service" required="required">
+                                    <option value="">-- Please Select --</option>
+                                    <option value="Sofa Cleaning">Sofa Cleaning</option>
+                                    <option value="Carpet Dry Cleaning">Carpet Dry Cleaning</option>
+                                    <option value="Car Dry Cleaning">Car Dry Cleaning</option>    
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="text-muted small ">Your requirements<span class="text-danger">*</span></label>
+                                <textarea type="text" name="message" class="form-control bg-light py-2 px-3  border-primary" rows="4" placeholder="Please write a brief about your requirements" required="required"></textarea>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <button type="submit" class="btn btn-success shadow py-3 d-block w-100"><i class="bi bi-calendar3"></i> Book Now</button>
+                            </div>
+                            <div class="response"></div>
+                        </form>
                     </div>
                 </div>
             </div>
